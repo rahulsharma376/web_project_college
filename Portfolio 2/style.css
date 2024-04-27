@@ -1,0 +1,71 @@
+.nav-back::after {
+    background-color: rgba(31, 31, 31, 0.1);
+}
+
+.nav-back::before {
+    background-color: rgba(31, 31, 31, 1);;
+}
+
+
+.nav-ele {
+    display: flex;
+}
+
+.nav-ele:hover {
+    text-decoration: underline #e65616 3px;
+    
+    transition: 1ms;
+}
+
+.let-talk {
+    border: #e65616 solid 1px !important;
+    border-radius: 5px;
+    background-color: #e65616 !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.let-talk:hover {
+    background-color: #5e1c00 !important;
+    color: #e65616 !important;
+    border: none !important;
+}
+.head-img
+{
+    height: 100vh;
+    background-image: url(./assets/images/omar-ram-kxW1EqfLy0U-unsplash.jpg);
+     background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+}
+
+.nav-sec2 {
+    background-color: #1a1a1a !important;
+}
+
+.card-sec2 {
+    color: white;
+}
+
+.card-sec2:hover {
+    background-color: #e65616 !important;
+    transform: scale(1.02);
+    transition:1s;
+}
+
+.video-sec {
+    color: white;
+
+}
+
+.video-sec:hover {
+    background-color: #e65616 !important;
+    transform: scale(1.05);
+    transition:1s;
+}
+
+.time-sec {
+    font-size: 40px;
+    
+}
+

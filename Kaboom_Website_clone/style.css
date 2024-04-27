@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main section start */
+.main{
+    display: flex;
+    padding: 0px 200px;
+    padding-top: 20px;
+    background-color: #F2632E;
+    justify-content: space-between;
+}
+
+.phem{
+    padding-top: 20px;
+    color: white;
+    line-height: 3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* .main div{
+    float: left;
+} */
+
+.main div button{
+    margin: 20px 100px 0 0;
+    padding: 14px 45px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: #F2632E;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Navbar section start */
+.navbar{
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.navbar li a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar li a:hover{
+    color: #F2632E;
+    transition: 0.3s;
+    border-bottom: #f18057 solid 3px;
+}
+
+.active{
+    color: #F2632E;
+}
+
+/* hero start */
+
+.hero img{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+/* pumping start here */
+.pumping{
+    text-align: center;
+    justify-items: center;
+    padding: 80px 300px;
+    border-bottom: 0.5px dotted rgba(0, 0, 0, 0.3);
+}
+.pumping h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.pumping img{
+    margin: 25px 0;
+}
+.pumping p{
+    font-size: 16 px;
+    color: #6E6E6E;
+    letter-spacing: inherit;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+/* Service */
+
+.services{
+    text-align: center;
+    justify-items: center;
+    padding: 80px 300px;
+}
+.services h2{
+    color: #F2632E;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.services img{
+    margin: 25px 0;
+}
+
+.services p{
+    font-size: 16 px;
+    color: #6E6E6E;
+    letter-spacing: inherit;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+/* gallery :start */
+
+.gallery div img{
+    height: 240px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.gallery div p{
+    height: 150px;
+    width: 320px;
+    color: #6E6E6E;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 10px;
+    cursor: text;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 190px;
+    z-index: 2;
+}
+.gallery div{
+    text-align: center;
+    background: linear-gradient(to top, rgba(214, 234, 234, 0.8) ,rgba(134, 132, 132, 0.8));
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery div:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+    background-color: #f18057;
+}
+
+.gallery h5{
+    font-size: 18px;
+    font-weight: 400;
+    color:#F2632E;
+}
+
+
+/* Our work */
+
+.work{
+    text-align: center;
+    justify-items: center;
+    padding: 80px 300px;
+}
+.work h2{
+    color: #F2632E;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.work img{
+    margin: 25px 0;
+}
+
+.work p{
+    font-size: 16 px;
+    color: #ffffff;
+    letter-spacing: inherit;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+
+/* Images Section */
+
+.workImg{
+    background-image: url(https://kaboomconcretepumping.com.au/wp-content/uploads/2019/10/Resized_received_347307726218759.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(4,0.5fr);
+    grid-template-rows: repeat(2,0.5fr);
+    grid-gap: 60px;
+    margin: 0px 240px;
+    position: relative;
+    z-index: 3;
+}
+
+.images div img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;  
+    z-index: 3;
+}
+
+
+.pls{
+    position: absolute;
+    z-index: 2;
+    font-size: 22px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 49%;
+    /* opacity: 100%; */
+    margin: 60px 0 0 90px;
+}
+
+.images div img:hover{
+    z-index: 1;
+}
+
+
+/* Equipment start */
+
+.equipment{
+    text-align: center;
+    justify-items: center;
+    padding: 80px 300px;
+}
+.equipment h2{
+    color: #F2632E;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.equipment img{
+    margin: 25px 0;
+}
+
+.equipment p{
+    font-size: 16px;
+    color: #6E6E6E;
+    letter-spacing: inherit;
+    line-height: 2;
+    padding: 10px;
+}
+
+.equip{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);    
+    margin: 60px 200px;
+}
+.equip div img{
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.equip div img:hover{
+    transform:scale3d(1.02,1.02,1.02);
+}
+
+.equpar{
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+.equip div p{
+    text-align: left;
+}
+
+
+/* About start*/
+
+.about{
+    text-align: center;
+    justify-items: center;
+    padding: 80px 220px;
+}
+.about h2{
+    color: #F2632E;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.about img{
+    margin: 25px 0;
+}
+
+.about p{
+    text-align: left;
+    font-size: 16px;
+    color: #6E6E6E;
+    letter-spacing: inherit;
+    line-height: 2;
+    padding: 10px 0;
+    margin-right: 50px;
+}
+
+.pimg{
+    display: flex;
+}
+
+.pimg img{
+    height: 380px;
+}
+
+/* footer start */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+
+.foots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.foots div{
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    font-size: 13px;
+    width: 350px;
+    justify-content: space-around;
+}
+
+.bor{
+    border-right: 1px solid #6E6E6E;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.bor h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.bor p a{
+    line-height: 3;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+.foot p a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.reserved{
+    text-align: center;
+    font-size: 14px;
+    border-top: #6E6E6E solid 1px;
+    padding-top: 20px;
+    color:#6E6E6E;
+}
